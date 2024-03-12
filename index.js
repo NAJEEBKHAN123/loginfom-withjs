@@ -16,6 +16,15 @@ let title = document.getElementById("title");
 
 signinBtn.onclick = function(){
     nameField.style.maxHeight = "0";
-    
+    title.innerHTML = "Log In";
+    signupBtn.classList.add("disable")
+    signBtinn.classList.remove("disable")
+}
+
+signupBtn.onclick = function(){
+    nameField.style.maxHeight = "60px";
+    title.innerHTML = "Sing Up";
+    signupBtn.classList.remove("disable")
+    signBtinn.classList.add("disable");
 
 }
