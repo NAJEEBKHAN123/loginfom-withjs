@@ -1,12 +1,12 @@
-// function checkEmailAddress(fieldId){
-//     if (document.getElementById(fieldId).value === ""){
-//         alert("Email required")
-//     }
-//     else if(document.getElementById(fieldId).value === "najeebkhalaku@gmail.com"){
-//         alert("Correct Email")
-//     }
+function checkEmailAddress(fieldId){
+    if (document.getElementById(fieldId).value === ""){
+        alert("Email required")
+    }
+    else if(document.getElementById(fieldId).value === "najeebkhalaku@gmail.com"){
+        alert("Correct Email")
+    }
     
-// }
+}
 
 let signupBtn = document.getElementById("signupBtn");
 let signinBtn = document.getElementById("signinBtn");
@@ -18,13 +18,12 @@ signinBtn.onclick = function(){
     nameField.style.maxHeight = "0";
     title.innerHTML = "Log In";
     signupBtn.classList.add("disable")
-    signBtinn.classList.remove("disable")
+    signinBtn.classList.remove("disable")
 }
 
 signupBtn.onclick = function(){
     nameField.style.maxHeight = "60px";
     title.innerHTML = "Sing Up";
     signupBtn.classList.remove("disable")
-    signBtinn.classList.add("disable");
-
+    signinBtn.classList.add("disable");
 }
